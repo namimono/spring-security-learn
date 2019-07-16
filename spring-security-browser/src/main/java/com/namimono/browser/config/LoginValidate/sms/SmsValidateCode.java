@@ -12,7 +12,7 @@ public class SmsValidateCode extends ValidateCode {
     public SmsValidateCode(String code,int livetime) {
         super(code);
         //设定Smscode存在期限
-        this.deadLine=LocalDateTime.now().plusSe短信登陆开发conds(livetime);
+        this.deadLine=LocalDateTime.now().plusSeconds(livetime);
     }
 
     public boolean isDead(){
